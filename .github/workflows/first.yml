@@ -1,5 +1,9 @@
-name: testworkflow
+name: first
 on: push
 jobs:
-    test_job:
-        runs-on: ubuntu
+    first_job:
+        runs-on: ubuntu-latest
+        steps:
+        - name: Welcome message
+          run: echo "welcome to github actions"    
+
